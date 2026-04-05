@@ -1,0 +1,94 @@
+.contact {
+  padding: 7rem 2rem;
+  background:
+    radial-gradient(circle at 70% 30%, rgba(90,120,255,0.08), transparent 30%),
+    #020305;
+  color: white;
+}
+
+.contact__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.contact__tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  color: rgba(255,255,255,0.5);
+}
+
+.contact h2 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.contact p {
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.contact__info {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__info strong {
+  display: block;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 0.3rem;
+}
+
+.contact__info a {
+  color: #9bb4ff;
+  text-decoration: none;
+}
+
+.contact__info a:hover {
+  text-decoration: underline;
+}
+
+.contact__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact__whatsapp {
+  padding: 1.2rem 2rem;
+  border-radius: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #02120a;
+
+  background: linear-gradient(
+    135deg,
+    #25d366,
+    #5cf5a0
+  );
+
+  box-shadow:
+    0 20px 60px rgba(37, 211, 102, 0.3);
+
+  transition: 0.3s;
+}
+
+.contact__whatsapp:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 30px 80px rgba(37, 211, 102, 0.45);
+}
+
+.contact__note {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+}
