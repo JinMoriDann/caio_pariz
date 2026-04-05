@@ -4,8 +4,9 @@ import ContactSection from "./components/ContactSection/ContactSection";
 import { PrivacyPolicy } from "./components/privacyPolicy/OrcaFacilPrivacyPolicyPage";
 
 function App() {
+  const hash = window.location.hash.toLowerCase();
 
-  const isPrivacyPage = window.location.pathname.endsWith("/privacy/orcafacil");
+  const isPrivacyPage = hash === "#/privacy/orcafacil";
 
   if (isPrivacyPage) {
     return <PrivacyPolicy />;
