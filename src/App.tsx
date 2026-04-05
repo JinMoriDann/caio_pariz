@@ -4,9 +4,10 @@ import ContactSection from "./components/ContactSection/ContactSection";
 import { PrivacyPolicy } from "./components/privacyPolicy/OrcaFacilPrivacyPolicyPage";
 
 function App() {
-  const path = window.location.pathname;
 
-  if (path === "/orcafacil/privacy") {
+  const isPrivacyPage = window.location.pathname.endsWith("/privacy/orcafacil");
+
+  if (isPrivacyPage) {
     return <PrivacyPolicy />;
   }
 
