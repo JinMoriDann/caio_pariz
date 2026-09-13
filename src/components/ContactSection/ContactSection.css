@@ -1,7 +1,7 @@
 .contact {
   padding: 7rem 2rem;
   background:
-    radial-gradient(circle at 70% 30%, rgba(90,120,255,0.08), transparent 30%),
+    radial-gradient(circle at 70% 30%, rgba(90, 120, 255, 0.08), transparent 30%),
     #020305;
   color: white;
 }
@@ -17,7 +17,7 @@
 .contact__tag {
   font-size: 0.75rem;
   letter-spacing: 0.3em;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .contact h2 {
@@ -27,7 +27,7 @@
 }
 
 .contact p {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;
   max-width: 500px;
 }
@@ -42,7 +42,7 @@
 .contact__info strong {
   display: block;
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   margin-bottom: 0.3rem;
 }
 
@@ -69,11 +69,9 @@
   text-decoration: none;
   color: #02120a;
 
-  background: linear-gradient(
-    135deg,
-    #25d366,
-    #5cf5a0
-  );
+  background: linear-gradient(135deg,
+      #25d366,
+      #5cf5a0);
 
   box-shadow:
     0 20px 60px rgba(37, 211, 102, 0.3);
@@ -90,5 +88,27 @@
 .contact__note {
   margin-top: 1rem;
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact__privacy {
+  max-width: 1200px;
+  margin: 5rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+}
+
+.contact__privacy a {
+  color: #9bb4ff;
+  text-decoration: none;
+}
+
+.contact__privacy a:hover {
+  text-decoration: underline;
 }

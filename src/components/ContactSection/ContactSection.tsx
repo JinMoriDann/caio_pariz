@@ -64,6 +64,12 @@ export default function ContactSection() {
           </div>
         </motion.div>
       </div>
+
+      <div className="contact__privacy">
+        <span>Políticas de privacidade</span>
+        <a href="#/privacy/orcafacil">Orçamento Fácil</a>
+        <a href="#/privacy/orbitadesucata">Órbita de Sucata</a>
+      </div>
     </section>
   );
 }

@@ -1,11 +1,23 @@
+import { useEffect, useState } from "react";
 import HeroSection from "./components/HeroSection/HeroSection";
 import ProjectsSection from "./components/ProjectsSection/ProjectSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 import { PrivacyPolicy } from "./components/privacyPolicy/OrcaFacilPrivacyPolicyPage";
 import { OrbitaSucataPrivacyPolicy } from "./components/privacyPolicy/OrbitaSucataPrivacyPolicyPage";
 
+function getHash() {
+  return window.location.hash.toLowerCase().replace(/\/$/, "");
+}
+
 function App() {
-  const hash = window.location.hash.toLowerCase();
+  const [hash, setHash] = useState(getHash);
+
+  useEffect(() => {
+    const handleHashChange = () => setHash(getHash());
+
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
 
   const isPrivacyPage = hash === "#/privacy/orcafacil";
   const isOrbitaSucataPrivacyPage = hash === "#/privacy/orbitadesucata";
