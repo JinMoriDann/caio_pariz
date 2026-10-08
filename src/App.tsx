@@ -4,6 +4,7 @@ import ProjectsSection from "./components/ProjectsSection/ProjectSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 import { PrivacyPolicy } from "./components/privacyPolicy/OrcaFacilPrivacyPolicyPage";
 import { OrbitaSucataPrivacyPolicy } from "./components/privacyPolicy/OrbitaSucataPrivacyPolicyPage";
+import { VigiliaDoVazioPrivacyPolicy } from "./components/privacyPolicy/VigiliaDoVazioPrivacyPolicyPage";
 
 function getHash() {
   return window.location.hash.toLowerCase().replace(/\/$/, "");
@@ -24,6 +25,10 @@ function App() {
 
   if (isPrivacyPage) {
     return <PrivacyPolicy />;
+  }
+
+  if (hash === "#/privacy/vigiliadovazio") {
+    return <VigiliaDoVazioPrivacyPolicy />;
   }
 
   if (isOrbitaSucataPrivacyPage) {
