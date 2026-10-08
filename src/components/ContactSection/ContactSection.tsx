@@ -69,6 +69,7 @@ export default function ContactSection() {
         <span>Políticas de privacidade</span>
         <a href="#/privacy/orcafacil">Orçamento Fácil</a>
         <a href="#/privacy/orbitadesucata">Órbita de Sucata</a>
+        <a href="#/privacy/vigiliadovazio">Vigília do Vazio</a>
       </div>
     </section>
   );
