@@ -51,10 +51,11 @@ Abra o endereço mostrado pelo Vite, com o caminho `/caio_pariz/`.
 Os endereços existentes são preservados:
 
 - [Orçamento Fácil](https://jinmoridann.github.io/caio_pariz/#/privacy/orcafacil)
+- [Excluir conta e dados — Órbita de Sucata](https://jinmoridann.github.io/caio_pariz/#/delete-account/orbitadesucata)
 - [Órbita de Sucata](https://jinmoridann.github.io/caio_pariz/#/privacy/orbitadesucata)
 - [Vigília do Vazio](https://jinmoridann.github.io/caio_pariz/#/privacy/vigiliadovazio)
 
-A reformulação visual não altera os textos das políticas. A atualização da política de Órbita de Sucata será feita separadamente.
+Política de Órbita de Sucata atualizada em 24/10/2026. A página de exclusão explica o procedimento no jogo, o atendimento por e-mail e os dados conservados. O link de e-mail abre uma mensagem; não envia nem conclui o pedido automaticamente.
 
 ## Publicação
 

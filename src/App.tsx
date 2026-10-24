@@ -1,3 +1,4 @@
+import { OrbitaSucataDeleteAccount } from "./components/privacyPolicy/OrbitaSucataDeleteAccountPage";
 import { useEffect, useState } from "react";
 import CaelusHome from "./components/CaelusHome";
 import { PrivacyPolicy } from "./components/privacyPolicy/OrcaFacilPrivacyPolicyPage";
@@ -20,6 +21,8 @@ function App() {
 
   const isPrivacyPage = hash === "#/privacy/orcafacil";
   const isOrbitaSucataPrivacyPage = hash === "#/privacy/orbitadesucata";
+
+  if (hash === "#/delete-account/orbitadesucata") return <OrbitaSucataDeleteAccount />;
 
   if (isPrivacyPage) {
     return <PrivacyPolicy />;

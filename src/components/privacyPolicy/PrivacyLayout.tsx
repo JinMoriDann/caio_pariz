@@ -1,7 +1,7 @@
 import { Children, cloneElement, isValidElement, useEffect, type ReactNode } from "react";
 import "./PrivacyLayout.css";
 
-export default function PrivacyLayout({ product, children }: { product: string; children: ReactNode }) {
+export default function PrivacyLayout({ product, children, documentType = "Privacidade" }: { product: string; children: ReactNode; documentType?: string }) {
   const sections: { id: string; title: ReactNode }[] = [];
   const content = Children.map(children, child => {
     if (isValidElement<{ children: ReactNode; id?: string }>(child) && child.type === "h2") {
@@ -14,9 +14,9 @@ export default function PrivacyLayout({ product, children }: { product: string; 
   useEffect(() => {
     window.scrollTo(0, 0);
     const previous = document.title;
-    document.title = `${product} · Privacidade | Caelus`;
+    document.title = `${product} · ${documentType} | Caelus`;
     return () => { document.title = previous; };
-  }, [product]);
+  }, [product, documentType]);
   return (
     <div className="privacy-page">
       <button className="privacy-skip" onClick={() => document.getElementById("policy-document")?.focus()}>Ir para o documento</button>
@@ -33,9 +33,13 @@ export default function PrivacyLayout({ product, children }: { product: string; 
         </section>
         <nav className="privacy-products" aria-label="Políticas por projeto">
           {[["Órbita de Sucata", "orbitadesucata"], ["Vigília do Vazio", "vigiliadovazio"], ["Orçamento Fácil", "orcafacil"]].map(([name, route]) => (
-            <a key={route} href={`#/privacy/${route}`} aria-current={product === name ? "page" : undefined}>{name}<span>↗</span></a>
+            <a key={route} href={`#/privacy/${route}`} aria-current={product === name && documentType === "Privacidade" ? "page" : undefined}>{name}<span>↗</span></a>
           ))}
         </nav>
+        {product === "Órbita de Sucata" && <nav className="privacy-related" aria-label="Documentos de Órbita de Sucata">
+          <a href="#/privacy/orbitadesucata" aria-current={documentType === "Privacidade" ? "page" : undefined}>Política de privacidade</a>
+          <a href="#/delete-account/orbitadesucata" aria-current={documentType === "Exclusão de conta" ? "page" : undefined}>Excluir conta e dados ↗</a>
+        </nav>}
         <div className="privacy-layout">
           <aside className="privacy-index">
             <p>NESTE DOCUMENTO</p>

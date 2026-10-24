@@ -44,3 +44,11 @@
 .privacy-footer{flex-direction:column}
 }
 
+
+.privacy-related { display: flex; flex-wrap: wrap; gap: 12px; margin: -12px 0 32px; }
+.privacy-related a { border: 1px solid #52607a; border-radius: 24px; padding: 12px 20px; color: #e9e5da; text-decoration: none; }
+.privacy-related a[aria-current="page"] { background: #e9e5da; color: #142132; }
+.privacy-related a:hover { border-color: #e9c78b; }
+.privacy-document h3 { margin-top: 30px; font-size: 1.15rem; line-height: 1.5; color: #344a55; }
+.privacy-document code { overflow-wrap: anywhere; font-size: .9em; }
+.privacy-document a { overflow-wrap: anywhere; }

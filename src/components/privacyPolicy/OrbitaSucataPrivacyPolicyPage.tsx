@@ -1,77 +1,70 @@
 import PrivacyLayout from "./PrivacyLayout";
 
 export function OrbitaSucataPrivacyPolicy() {
-    return (
-        <PrivacyLayout product="Órbita de Sucata">
-        <h1
-                >
-                    Política de Privacidade — Órbita de Sucata
-                </h1>
-
-                <p
-                >
-                    Última atualização: 13/09/2026
-                </p>
-
-                <p>
-                    Esta Política de Privacidade descreve como o aplicativo{" "}
-                    <strong>Órbita de Sucata</strong> trata as informações dos usuários.
-                </p>
-
-                <h2>1. Sobre o aplicativo</h2>
-                <p>
-                    O <strong>Órbita de Sucata</strong> é um jogo desenvolvido para
-                    entretenimento e diversão dos usuários.
-                </p>
-
-                <h2>2. Coleta de dados</h2>
-                <p>
-                    O aplicativo não coleta dados pessoais diretamente para armazenamento
-                    em servidores próprios.
-                </p>
-                <p>
-                    As informações necessárias para o funcionamento do jogo podem ser
-                    armazenadas localmente no dispositivo do usuário.
-                </p>
-
-                <h2>3. Uso de anúncios</h2>
-                <p>
-                    O aplicativo exibe apenas um banner de propaganda, utilizando o
-                    serviço de terceiros <strong>Google AdMob</strong>, assim como o
-                    aplicativo Orçamento Fácil.
-                </p>
-                <p>
-                    O Google AdMob pode coletar informações automaticamente, como
-                    identificadores do dispositivo e dados de uso, para exibir e medir
-                    anúncios de acordo com suas próprias políticas de privacidade.
-                </p>
-
-                <h2>
-                    4. Compartilhamento de dados
-                </h2>
-                <p>
-                    O Órbita de Sucata não vende nem compartilha dados pessoais com
-                    terceiros. Os dados tratados pelo serviço de anúncios seguem as
-                    políticas do Google AdMob.
-                </p>
-
-                <h2>5. Segurança</h2>
-                <p>
-                    Recomendamos que o usuário mantenha seu dispositivo atualizado e
-                    protegido. Nenhum método de armazenamento ou transmissão é totalmente
-                    seguro, mas adotamos as medidas disponíveis para preservar a
-                    privacidade dos usuários.
-                </p>
-
-                <h2>6. Contato</h2>
-                <p>
-                    Em caso de dúvidas, entre em contato pelo e-mail:
-                    <br />
-                    <strong>caio.pariz2000@gmail.com</strong>
-                </p>
-
-                <h2>7. Alterações</h2>
-                <p>Esta política pode ser atualizada conforme necessário.</p>
-            </PrivacyLayout>
-    );
+  return (
+    <PrivacyLayout product="Órbita de Sucata">
+      <h1>{"Política de Privacidade — Órbita de Sucata"}</h1>
+      <p>{"Última atualização: "}<strong>{"24 de outubro de 2026"}</strong>{"."}</p>
+      <p>{"Esta política explica como os dados são tratados no jogo "}<strong>{"Órbita de Sucata"}</strong>{", para Android, identificado na Google Play como "}<code>{"com.caiopariz.orbitasucata"}</code>{"."}</p>
+      <p>{"O responsável pelo tratamento dos dados do jogo é "}<strong>{"Caio de Andrade Pariz"}</strong>{". Para dúvidas, solicitações sobre dados ou pedidos de exclusão, escreva para "}<strong><a href="mailto:caio.pariz2000@gmail.com">{"caio.pariz2000@gmail.com"}</a></strong>{"."}</p>
+      <p>{"Site: "}<a href="https://jinmoridann.github.io/caio_pariz/">{"jinmoridann.github.io/caio_pariz"}</a>{". Esta política trata do jogo e dos serviços usados por ele. Serviços externos acessados por links também possuem suas próprias políticas."}</p>
+      <h2>{"1. Dados usados pelo jogo"}</h2>
+      <h3>{"Progresso e preferências"}</h3>
+      <p>{"O jogo guarda no aparelho o progresso das partidas, recursos, melhorias, naves e skins, conquistas locais, descobertas, escolhas da história, recordes e configurações, como idioma, áudio e acessibilidade. Esses dados permitem continuar de onde você parou."}</p>
+      <p>{"É possível exportar ou importar um arquivo de backup. Você escolhe onde esse arquivo fica e com quem o compartilha. O Android também pode incluir dados do aplicativo em backups do sistema, dependendo das configurações do aparelho e da conta Google."}</p>
+      <h3>{"Identificação e login"}</h3>
+      <p>{"O aplicativo usa Firebase Authentication e pode criar uma identificação técnica de visitante, chamada UID, mesmo sem login Google. Essa identificação não equivale, por si só, a conhecer seu nome, mas permite distinguir uma conta de outra."}</p>
+      <p>{"Se você entrar com Google, o serviço de autenticação recebe o identificador da conta, nome, e-mail e informações básicas de perfil disponibilizadas pelo Google. O jogo usa nome e e-mail para mostrar qual conta está conectada. Sua senha Google não é recebida pelo desenvolvedor."}</p>
+      <p>{"O login Google permite usar recursos online vinculados à conta. Jogar sem esse login não desativa, por si só, as conexões técnicas do aplicativo nem os anúncios."}</p>
+      <h3>{"Conquistas, partidas e competições online"}</h3>
+      <p>{"Ao usar recursos online, podemos armazenar no Firebase o identificador da conta, conquistas, recordes, datas e horários, versão do jogo e informações das partidas. Isso inclui duração, pontuação, recursos coletados, nave e modo utilizados, obstáculos evitados, combos, resultados, escolhas da partida e uma sequência simplificada de movimentos para representar o percurso do voo."}</p>
+      <p>{"Parte desses dados serve para conferir a consistência dos resultados, sincronizar conquistas e operar rankings, desafios diários e objetivos comunitários. A sincronização atual não constitui uma cópia completa de todo o progresso local."}</p>
+      <p>{"Nos rankings e objetivos comunitários, outros jogadores autenticados podem consultar o indicativo de piloto gerado pelo jogo, resultados e contribuições. Os registros também usam identificadores técnicos de conta; portanto, esses dados são "}<strong>{"pseudonimizados, não totalmente anônimos"}</strong>{". Seu nome e seu e-mail Google não são publicados nesses rankings. Os registros detalhados das partidas e a lista de conquistas no Firebase não são oferecidos como conteúdo público aos demais jogadores."}</p>
+      <p>{"Se você decidir compartilhar um código de desafio, quem receber o código poderá acessar os resultados e o percurso simplificado incluídos nele. O compartilhamento usa o aplicativo ou canal escolhido por você."}</p>
+      <h3>{"Google Play Games"}</h3>
+      <p>{"O jogo integra conquistas ao Google Play Games. Conforme a disponibilidade do serviço e suas configurações Google, ele pode reconhecer sua sessão e sincronizar conquistas com seu perfil de jogador. Esses registros são administrados também pelo Google e seguem as configurações e políticas do Play Games."}</p>
+      <h3>{"Compras de skins"}</h3>
+      <p>{"As compras são processadas pela Google Play. O jogo consulta produtos, preços, estado das compras e identificadores técnicos, incluindo tokens e assinaturas das transações, para verificar compras, confirmar o recebimento e restaurar skins adquiridas."}</p>
+      <p>{"O desenvolvedor não recebe pelo jogo os números do seu cartão, senhas bancárias ou dados completos do seu meio de pagamento. Na implementação atual, tokens e comprovantes de compra não são enviados pelo jogo ao banco de dados Firebase. Os registros comerciais da Google Play permanecem sujeitos às regras e aos prazos do Google."}</p>
+      <h3>{"Anúncios"}</h3>
+      <p>{"O jogo usa "}<strong>{"Google AdMob / Google Mobile Ads"}</strong>{" para exibir anúncios. O serviço pode processar endereço IP, localização aproximada inferida pelo IP, interações com anúncios e aplicativo, informações de diagnóstico e identificadores de dispositivo ou conta, inclusive identificador de publicidade quando disponível e permitido pela configuração aplicável."}</p>
+      <p>{"Esses dados são usados para entregar e medir anúncios, operar o serviço e prevenir fraude. O SDK pode se conectar ao Google e processar dados mesmo quando você não clica em um anúncio. Essa atividade é independente do login Google do jogo e das estatísticas opcionais descritas abaixo."}</p>
+      <p>{"Você pode consultar os controles de privacidade e publicidade do Android e da sua conta Google. A disponibilidade desses controles varia conforme o aparelho, a idade e a conta utilizada."}</p>
+      <h3>{"Estatísticas opcionais do próprio jogo"}</h3>
+      <p>{"Há um recurso de estatísticas de uso desativado por padrão, com envio condicionado à autorização registrada no aplicativo. Ele registra eventos como início e fim de partida, abertura de telas, primeira coleta, uso de melhorias e interação com desafios ou história, acompanhados de medidas resumidas de tempo, modo ou resultado."}</p>
+      <p>{"Os registros desses eventos não incluem nome, e-mail, UID da conta ou identificador de publicidade como campos do evento. Isso não significa que os demais serviços do aplicativo deixem de tratar dados técnicos. A versão atual não usa os SDKs Firebase Analytics ou Firebase Crashlytics."}</p>
+      <h3>{"Segurança e comunicações de suporte"}</h3>
+      <p>{"Firebase App Check e Google Play Integrity ajudam a verificar a legitimidade do aplicativo e das solicitações. O Google pode processar informações técnicas do aplicativo, aparelho e integridade necessárias a esses serviços."}</p>
+      <p>{"Se você entrar em contato, receberemos seu e-mail e o conteúdo que enviar, para responder e atender à solicitação. Não envie senhas, códigos de autenticação ou dados de cartão. O jogo não solicita acesso à câmera, microfone, contatos ou localização precisa para suas funções atuais."}</p>
+      <h2>{"2. Por que usamos os dados"}</h2>
+      <p>{"Usamos os dados para oferecer o jogo e suas funções online, salvar e restaurar informações disponíveis, reconhecer compras, sincronizar conquistas, manter competições, responder a solicitações, proteger contas e resultados, prevenir abusos e financiar o jogo com publicidade."}</p>
+      <p>{"Conforme a finalidade e a legislação aplicável, o tratamento se fundamenta na execução do serviço solicitado, no cumprimento de obrigações legais, em interesses legítimos de operação e segurança, ou em consentimento quando exigido. Essas bases não afastam os cuidados específicos exigidos para crianças e adolescentes. Você pode pedir esclarecimentos sobre a finalidade e a base aplicável a um tratamento pelo e-mail de contato."}</p>
+      <h2>{"3. Com quem os dados são tratados"}</h2>
+      <p>{"O jogo utiliza serviços do Google, incluindo Firebase Authentication, Cloud Firestore, App Check, Play Integrity, Google Play Games, Google Play Billing e AdMob. Esses serviços recebem os dados necessários às suas funções e podem atuar segundo suas próprias políticas e condições."}</p>
+      <p>{"Dados de rankings e contribuições ficam acessíveis a outros jogadores autenticados nos limites descritos nesta política. Dados também podem ser tratados para atender a obrigações legais, ordens de autoridade competente e proteção de direitos."}</p>
+      <p>{"O desenvolvedor não comercializa diretamente uma base de dados dos jogadores. O tratamento publicitário do AdMob, inclusive o compartilhamento descrito pelo Google, é explicado separadamente nesta política."}</p>
+      <p>{"Os serviços Google podem tratar dados fora do Brasil, inclusive nos Estados Unidos. O tratamento está sujeito às salvaguardas e condições aplicáveis aos serviços e às transferências internacionais, além dos direitos previstos na legislação pertinente."}</p>
+      <h2>{"4. Por quanto tempo os dados permanecem"}</h2>
+      <ul><li><strong>{"Progresso local:"}</strong>{" permanece no armazenamento do aplicativo até ser substituído, resetado ou removido. Desinstalar ou limpar os dados afeta a cópia local; arquivos exportados e backups do sistema devem ser administrados separadamente."}</li><li><strong>{"Conta e dados online:"}</strong>{" permanecem enquanto não forem excluídos ou houver outra necessidade legítima de conservação. A versão atual não possui exclusão automática por inatividade."}</li><li><strong>{"Eventos das estatísticas opcionais:"}</strong>{" não possuem prazo de expiração automática definido na versão atual. Como os registros não incluem um identificador de conta, não é possível localizar todos os eventos de uma pessoa apenas pelo seu nome ou e-mail."}</li><li><strong>{"Registro mínimo de exclusão:"}</strong>{" após excluir uma conta, permanece um registro com seu identificador técnico e a data do pedido, sem nome ou e-mail. Ele impede que sessões antigas voltem a gravar dados da conta excluída. Atualmente esse registro não possui prazo fixo de remoção automática. Você pode solicitar informações e revisão dessa conservação pelo contato desta política."}</li><li><strong>{"Solicitações de suporte e obrigações legais:"}</strong>{" os dados são conservados conforme a necessidade de atender ao pedido, comprovar seu atendimento e cumprir obrigações aplicáveis."}</li><li><strong>{"Serviços Google:"}</strong>{" registros de compras, publicidade, Play Games e registros técnicos mantidos pelo próprio Google seguem também seus prazos e controles. O desenvolvedor não controla todos esses registros."}</li></ul>
+      <h2>{"5. Exclusão de conta e outras escolhas"}</h2>
+      <p>{"No jogo, abra "}<strong>{"Configurações → Excluir conta e dados online"}</strong>{" e confirme a mesma conta Google. Se necessário, entre primeiro na conta que deseja excluir."}</p>
+      <p>{"O processo remove a conta de autenticação do jogo, conquistas armazenadas no Firebase, recordes, sessões, resultados diários, contribuições comunitárias e registros de partidas vinculados à conta. É necessária conexão com a internet. Se ocorrer uma falha, a sincronização fica suspensa e você poderá usar "}<strong>{"Concluir exclusão"}</strong>{" para tentar novamente."}</p>
+      <p>{"Essa operação não exclui sua conta Google, compras ou pedidos da Google Play, conquistas do Play Games, progresso local, backups exportados ou backups do Android. Também não apaga o registro mínimo de exclusão ou eventos de estatísticas sem vínculo de conta, conforme explicado acima. Excluir a conta não solicita reembolso de compras."}</p>
+      <p>{"Para apagar o progresso do aparelho, use "}<strong>{"Configurações → Resetar progresso"}</strong>{". Sair da conta, resetar o progresso ou desinstalar o jogo não substitui o pedido de exclusão dos dados online. Se você preservar o progresso local e voltar a sincronizá-lo com uma nova conta, novos registros online poderão ser criados."}</p>
+      <p>{"Você também pode pedir exclusão sem acesso ao aplicativo: consulte a "}<a href="https://jinmoridann.github.io/caio_pariz/#/delete-account/orbitadesucata">{"página de exclusão de conta"}</a>{" ou escreva para "}<strong><a href="mailto:caio.pariz2000@gmail.com">{"caio.pariz2000@gmail.com"}</a></strong>{" com o assunto "}<strong>{"“Órbita de Sucata — exclusão de conta”"}</strong>{". Podemos solicitar informações proporcionais para confirmar a titularidade antes de remover dados."}</p>
+      <h2>{"6. Crianças e adolescentes"}</h2>
+      <p>{"O jogo tem classificação indicativa "}<strong>{"Livre"}</strong>{" e seu público inclui crianças menores de 13 anos. A classificação descreve o conteúdo do jogo; ela não elimina os cuidados necessários com contas, anúncios, compras e dados pessoais."}</p>
+      <p>{"Pais e responsáveis podem acompanhar o uso, administrar as configurações e autorizações das contas Google e solicitar informações ou exclusão de dados da criança pelo contato desta política. Informações adicionais sobre uma criança só devem ser enviadas quando necessárias ao atendimento, preferencialmente pelo responsável."}</p>
+      <p>{"O tratamento de dados de crianças e adolescentes deve observar seu melhor interesse e as exigências legais aplicáveis, inclusive as condições específicas de consentimento do responsável quando essa for a base utilizada. Uma autorização genérica de estatísticas ou a simples abertura do jogo não substitui essas exigências."}</p>
+      <h2>{"7. Seus direitos"}</h2>
+      <p>{"Nos termos da legislação aplicável, incluindo a LGPD, você ou o responsável legal pode solicitar confirmação e acesso aos dados, correção, informação sobre uso e compartilhamento, anonimização, bloqueio ou eliminação quando cabíveis, portabilidade quando aplicável, revisão do tratamento e revogação de consentimento."}</p>
+      <p>{"Pedidos devem ser enviados a "}<strong><a href="mailto:caio.pariz2000@gmail.com">{"caio.pariz2000@gmail.com"}</a></strong>{". Podemos precisar confirmar a identidade ou a representação legal, usando somente informações necessárias à solicitação. A revogação de consentimento não invalida o tratamento realizado legitimamente antes dela. Certos dados podem ser conservados quando houver fundamento legal, conforme explicado nesta política. Você também pode apresentar reclamação à Autoridade Nacional de Proteção de Dados — ANPD."}</p>
+      <h2>{"8. Segurança"}</h2>
+      <p>{"O jogo utiliza autenticação, conexões protegidas dos serviços e regras de acesso para restringir o tratamento de dados online. Nenhum sistema é completamente imune a falhas. Evite compartilhar backups e códigos com informações que não queira divulgar e mantenha o aparelho e a conta Google protegidos."}</p>
+      <h2>{"9. Atualizações e políticas dos serviços"}</h2>
+      <p>{"Esta política pode ser atualizada quando mudarem as funções ou as práticas de tratamento de dados. A data da revisão ficará visível nesta página. Quando necessário, mudanças relevantes serão comunicadas e novas autorizações serão solicitadas antes do tratamento correspondente."}</p>
+      <p>{"Para conhecer as práticas dos provedores, consulte a "}<a href="https://policies.google.com/privacy">{"Política de Privacidade do Google"}</a>{", as "}<a href="https://firebase.google.com/support/privacy">{"informações de privacidade do Firebase"}</a>{" e a "}<a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">{"divulgação de dados do Google Mobile Ads"}</a>{"."}</p>
+      <p>{"Contato do responsável: "}<strong>{"Caio de Andrade Pariz — "}<a href="mailto:caio.pariz2000@gmail.com">{"caio.pariz2000@gmail.com"}</a></strong>{"."}</p>
+    </PrivacyLayout>
+  );
 }

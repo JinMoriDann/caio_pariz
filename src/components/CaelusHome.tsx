@@ -212,6 +212,10 @@ export default function CaelusHome() {
             </div>
           </div>
         </section>
+        <nav className="game-privacy-links wrap" aria-label="Privacidade de Órbita de Sucata">
+          <a href="#/privacy/orbitadesucata">Política de privacidade ↗</a>
+          <a href="#/delete-account/orbitadesucata">Excluir conta e dados ↗</a>
+        </nav>
         <section className="trailer-section wrap" aria-labelledby="trailer-title">
           <div className="trailer-copy">
             <p className="eyebrow">TRANSMISSÃO RECEBIDA / ÓRBITA DE SUCATA</p>
@@ -320,6 +324,7 @@ export default function CaelusHome() {
           <div className="privacy-links">
             <span>PRIVACIDADE</span>
             <a href="#/privacy/orbitadesucata">Órbita de Sucata</a>
+            <a href="#/delete-account/orbitadesucata">Excluir conta — Órbita de Sucata</a>
             <a href="#/privacy/orcafacil">Orçamento Fácil</a>
             <a href="#/privacy/vigiliadovazio">Vigília do Vazio</a>
           </div>
