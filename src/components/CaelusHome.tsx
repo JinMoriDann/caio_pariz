@@ -212,6 +212,27 @@ export default function CaelusHome() {
             </div>
           </div>
         </section>
+        <section className="trailer-section wrap" aria-labelledby="trailer-title">
+          <div className="trailer-copy">
+            <p className="eyebrow">TRANSMISSÃO RECEBIDA / ÓRBITA DE SUCATA</p>
+            <h2 id="trailer-title">Um pequeno sinal.<br /><em>Um universo inteiro.</em></h2>
+            <p>Veja Órbita de Sucata em movimento. Dê o play no trailer e embarque nessa órbita.</p>
+            <a className="text-link" href="https://www.youtube.com/shorts/oNJRdrRfhT0" target="_blank" rel="noreferrer">Assistir no YouTube <span>↗</span></a>
+          </div>
+          <div className="trailer-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/oNJRdrRfhT0" title="Trailer vertical de Órbita de Sucata" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" />
+          </div>
+        </section>
+        <section className="vigilia-section wrap" aria-labelledby="vigilia-title">
+          <div className="vigilia-sky" aria-hidden="true"><div className="void-ring" /><span>✦</span><small>CAELUS / VIGÍLIA DO VAZIO</small></div>
+          <div className="vigilia-copy">
+            <p className="eyebrow">OUTRO UNIVERSO CAELUS</p>
+            <h2 id="vigilia-title">Vigília<br />do <em>Vazio.</em></h2>
+            <p>Nosso céu tem mais de uma história. Vigília do Vazio também faz parte do universo de jogos da Caelus.</p>
+            <a className="text-link" href="https://www.instagram.com/caelussys/" target="_blank" rel="noreferrer">Acompanhe a Caelus <span>↗</span></a>
+            <a className="vigilia-privacy" href="#/privacy/vigiliadovazio">Política de privacidade ↗</a>
+          </div>
+        </section>
         <section className="studio wrap" id="estudio">
           <div>
             <p className="eyebrow">02 / A CAELUS</p>

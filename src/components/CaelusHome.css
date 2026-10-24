@@ -746,3 +746,16 @@ footer {
     transition: none !important;
   }
 }
+
+.trailer-section{display:grid;grid-template-columns:1fr 340px;gap:100px;align-items:center;padding:90px 0;border-top:1px solid var(--line)}
+.trailer-copy h2{font-size:clamp(35px,4.5vw,62px);font-weight:400;line-height:1.12;letter-spacing:-2px;margin:28px 0}
+.trailer-copy h2 em,.vigilia-copy h2 em{font-family:Georgia,serif;font-weight:400;color:#c7c3ff}
+.trailer-copy>p:not(.eyebrow),.vigilia-copy>p:not(.eyebrow){color:var(--muted);font-size:15px;line-height:1.9;max-width:430px;margin-bottom:30px}
+.trailer-frame{width:100%;aspect-ratio:9/16;background:#03060d;border:1px solid #ffffff30;border-radius:16px;overflow:hidden;box-shadow:0 0 90px #8880e51a}
+.trailer-frame iframe{width:100%;height:100%;border:0;display:block}
+.vigilia-section{display:grid;grid-template-columns:1.1fr 1fr;border:1px solid var(--line);background:#0d1020;margin-top:30px;margin-bottom:90px;overflow:hidden}
+.vigilia-sky{position:relative;min-height:460px;display:grid;place-items:center;background:radial-gradient(ellipse at center,#61528e44,transparent 65%),radial-gradient(circle at 20% 25%,#d8ceff 1px,transparent 2px),radial-gradient(circle at 75% 65%,#bdb6dd 1px,transparent 2px),#090d18}
+.void-ring{width:240px;height:240px;border-radius:50%;background:#070a12;box-shadow:9px -6px 4px -5px #d5c7ff,15px -12px 35px -10px #ad8feb90,0 0 70px #8060b42b;border:1px solid #b5a0e22b;transform:rotate(-30deg)}
+.vigilia-sky>span{position:absolute;top:22%;right:25%;color:#ded6ff;font-size:22px}.vigilia-sky small{position:absolute;bottom:28px;font-size:9px;letter-spacing:3px;color:#afa4c6}
+.vigilia-copy{padding:60px 45px;align-self:center}.vigilia-copy h2{font-size:clamp(45px,5vw,72px);font-weight:400;line-height:1.04;letter-spacing:-2px;margin:25px 0}.vigilia-privacy{display:block;font-size:11px;color:#a9b4c7!important;margin-top:25px}
+@media(max-width:760px){.trailer-section{grid-template-columns:1fr;gap:35px;padding:55px 0}.trailer-frame{max-width:340px;justify-self:center}.vigilia-section{grid-template-columns:1fr}.vigilia-sky{min-height:320px}.void-ring{width:190px;height:190px}.vigilia-copy{padding:35px 25px}.trailer-copy h2{letter-spacing:-1px}}
