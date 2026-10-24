@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import HeroSection from "./components/HeroSection/HeroSection";
-import ProjectsSection from "./components/ProjectsSection/ProjectSection";
-import ContactSection from "./components/ContactSection/ContactSection";
+import CaelusHome from "./components/CaelusHome";
 import { PrivacyPolicy } from "./components/privacyPolicy/OrcaFacilPrivacyPolicyPage";
 import { OrbitaSucataPrivacyPolicy } from "./components/privacyPolicy/OrbitaSucataPrivacyPolicyPage";
 import { VigiliaDoVazioPrivacyPolicy } from "./components/privacyPolicy/VigiliaDoVazioPrivacyPolicyPage";
@@ -35,13 +33,7 @@ function App() {
     return <OrbitaSucataPrivacyPolicy />;
   }
 
-  return (
-    <>
-      <HeroSection />
-      <ProjectsSection />
-      <ContactSection />
-    </>
-  );
+  return <CaelusHome />;
 }
 
 export default App;

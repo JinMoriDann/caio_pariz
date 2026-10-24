@@ -41,11 +41,11 @@ export default function HeroSection() {
         () =>
             Array.from({ length: 22 }).map((_, i) => ({
                 id: i,
-                left: Math.random() * 100,
-                top: Math.random() * 100,
-                size: 2 + Math.random() * 5,
-                duration: 6 + Math.random() * 8,
-                delay: Math.random() * 4,
+                left: ((i * 37 + 13) % 100),
+                top: ((i * 37 + 13) % 100),
+                size: 2 + ((i * 7) % 5),
+                duration: 6 + ((i * 3) % 8),
+                delay: (i % 4),
             })),
         []
     );
