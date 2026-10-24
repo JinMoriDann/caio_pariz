@@ -228,9 +228,9 @@ export default function CaelusHome() {
           </div>
         </section>
         <section className="vigilia-section wrap" aria-labelledby="vigilia-title">
-          <div className="vigilia-sky" aria-hidden="true"><div className="void-ring" /><span>✦</span><small>CAELUS / VIGÍLIA DO VAZIO</small></div>
+          <div className="vigilia-sky"><img className="vigilia-icon" src={`${import.meta.env.BASE_URL}vigilia-do-vazio.png`} alt="Ícone de Vigília do Vazio" width="512" height="512" loading="lazy" /><small>CAELUS / VIGÍLIA DO VAZIO</small></div>
           <div className="vigilia-copy">
-            <p className="eyebrow">OUTRO UNIVERSO CAELUS</p>
+            <p className="eyebrow">EM DESENVOLVIMENTO / CAELUS</p>
             <h2 id="vigilia-title">Vigília<br />do <em>Vazio.</em></h2>
             <p>Nosso céu tem mais de uma história. Vigília do Vazio também faz parte do universo de jogos da Caelus.</p>
             <a className="text-link" href="https://www.instagram.com/caelussys/" target="_blank" rel="noreferrer">Acompanhe a Caelus <span>↗</span></a>

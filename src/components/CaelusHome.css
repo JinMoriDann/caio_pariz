@@ -763,3 +763,5 @@ footer {
 .game-privacy-links { display: flex; flex-wrap: wrap; gap: 16px 32px; padding-top: 24px; padding-bottom: 24px; }
 .game-privacy-links a { color: var(--muted, #b6bdc9); font-size: .875rem; text-underline-offset: 5px; }
 .game-privacy-links a:hover { color: #e9c78b; }
+
+.vigilia-icon { display: block; width: min(68%, 320px); height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 22%; box-shadow: 0 24px 70px #0008; }
